@@ -18,8 +18,6 @@ sudo echo 'EndSection' >> /etc/X11/xorg.conf.d/20-intel.conf
 mkdir /home/$USER/.config
 cp -r ./config/* /home/$USER/.config
 
-chsh -s /usr/bin/fish
-
 cd ./dwm-config/
 tar -xf ./dwm-config.tar.gz
 rm ./dwm-config.tar.gz
