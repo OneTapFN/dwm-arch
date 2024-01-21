@@ -4,7 +4,7 @@ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.ta
 sudo echo "[chaotic-aur]" >> /etc/pacman.conf
 sudo echo "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 
-sudo pacman -Sy --needed xorg base-devel git wget neovim nitrogen ttf-font-awesome ttf-jetbrains-mono mpv feh htop fish nemo rofi pluma firefox pavucontrol noto-fonts-emoji nerd-fonts pulseaudio nordic-theme nordzy-icon-theme python-pip nodejs npm xf86-video-intel dunst -y
+sudo pacman -Sy --needed xorg xorg-xinit base-devel git wget neovim nitrogen ttf-font-awesome ttf-jetbrains-mono mpv feh htop fish nemo rofi pluma firefox pavucontrol noto-fonts-emoji nerd-fonts pulseaudio nordic-theme nordzy-icon-theme python-pip nodejs npm xf86-video-intel dunst -y
 
 sudo mkdir /etc/X11/xorg.conf.d/
 sudo touch /etc/X11/xorg.conf.d/20-intel.conf
