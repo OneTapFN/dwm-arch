@@ -1,3 +1,4 @@
+#!/usr/bin/sh
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com --noconfirm
 sudo pacman-key --lsign-key 3056513887B78AEB --noconfirm
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' --noconfirm
