@@ -1,10 +1,10 @@
-sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
-sudo pacman-key --lsign-key 3056513887B78AEB
-sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
+sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com --noconfirm
+sudo pacman-key --lsign-key 3056513887B78AEB --noconfirm
+sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' --noconfirm
 sudo echo "[chaotic-aur]" >> /etc/pacman.conf
 sudo echo "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 
-sudo pacman -Sy --needed xorg xorg-xinit base-devel git wget neovim nitrogen ttf-font-awesome ttf-jetbrains-mono mpv feh htop fish nemo rofi pluma firefox pavucontrol noto-fonts-emoji nerd-fonts pulseaudio nordic-theme nordzy-icon-theme python-pip nodejs npm xf86-video-intel dunst
+sudo pacman -Sy --needed --noconfirm xorg xorg-xinit base-devel git wget neovim nitrogen ttf-font-awesome ttf-jetbrains-mono mpv feh htop fish nemo rofi pluma firefox pavucontrol noto-fonts-emoji nerd-fonts pulseaudio nordic-theme nordzy-icon-theme python-pip nodejs npm xf86-video-intel dunst
 
 sudo mkdir /etc/X11/xorg.conf.d/
 sudo touch /etc/X11/xorg.conf.d/20-intel.conf
